@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'modernSans' ;
+    src: url(fontes/ModernSans-Light.otf) format(OpenType);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-family: 'modernSans', 'Times New Roman', Times, serif;
 }
 
 section{
@@ -26,7 +37,7 @@ nav ul {
     justify-content: center;
     padding: 10px 0;
     color: #063FD4;
-    font-size: 20px;
+    font-size: 25.5px;
 
 }
 
@@ -34,3 +45,32 @@ nav li {
     margin: 0 20px;
 }
 
+.titulo_subt{
+    position:absolute;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 15%;  
+}
+
+.titulo_subt h1{
+    font-size: 130px;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo_subt p{
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 25px;
+    color: #063FD4;
+    float: left;
+}
+
+.forma_redonda{
+    position: absolute;
+    margin-right: 0;
+    margin-left: 55.9%;
+    margin-top: 10px;
+    
+}
