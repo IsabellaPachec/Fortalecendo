@@ -15,10 +15,10 @@ body{
     font-family: 'modernSans', 'Times New Roman', Times, serif;
 }
 
-section{
+header{
     background-image: url(Img/Rectangle\ 1.png);
     width: 100%;
-    height: 742px;
+    height: 730px;
     background-size: 100%;
 }
 
@@ -32,6 +32,7 @@ nav{
 }
 
 nav ul {
+    margin-top: 10px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -45,6 +46,19 @@ nav li {
     margin: 0 20px;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+li:hover{
+    height: 25px;
+    background-color: rgba(193, 152, 245, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.7s;
+
+}
+
 .titulo_subt{
     position:absolute;
     width: 50%;
@@ -53,18 +67,28 @@ nav li {
 }
 
 .titulo_subt h1{
-    font-size: 130px;
+    font-size: 135px;
     color: #fff;
     text-align: center;
+    font-weight: 100;
+
+    animation:fadeIn;
+    animation-duration: 2.5s;
+   
+    
 }
 
 .titulo_subt p{
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #063FD4;
     float: left;
+
+    animation:fadeIn;
+    animation-duration: 2.5s;
+    
 }
 
 .forma_redonda{
@@ -74,3 +98,15 @@ nav li {
     margin-top: 10px;
     
 }
+
+.redonda{
+    position: absolute;
+}
+
+.boneco{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 105px;
+    
+}
+
