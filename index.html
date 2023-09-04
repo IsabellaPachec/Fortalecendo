@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
     <title>Home Tinas's Class</title>
 </head>
 
@@ -33,19 +36,43 @@
             <img src="Img/boneco1.png">
         </div>
         </div>
+
+        <div class="meia_elipse">
+            <img src="Img/meiaelipse.png">
+        </div>
+
+        <div class="ilus" data-aos="fade-up"
+        data-aos-anchor-placement="center-center" data-aos-duration="1000">
+            <img src="Img/conversation.png">
+        </div>
         
     </header>
 
 <body>
 
     <section id="informativo">
-        <div class="ilus">
-            <img src="Img/meiaelipse.png">
-            <img src="Img/conversation.png">
+        <div class="text1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam impedit a corrupti nulla ad earum, provident ut nisi maxime molestiae, eos, eius error! Reiciendis provident eos qui, in quaerat est?</p>
         </div>
+
+        <div class="books" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="900">
+            <img src="Img/books.png">
+        </div>
+
+        <div class="text2">
+            <p>Lorem ipsum dolor sit amet. Et galisum delectus aut cumque dolor cum labore consequatur. Qui odio Lorem ipsum dolor sit amet. Et galisum</p>
+
+        </div>
+        
     </section>
 
+    <hr>
     
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
