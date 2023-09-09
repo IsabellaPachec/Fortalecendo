@@ -454,10 +454,37 @@ footer{
     .wrapper .carousel{
         grid-auto-columns: calc((100% / 2) - 9px);
     }
+
+    header {
+        height: 500px; 
+    }
+
+    .titulo h1 {
+        font-size: 90px; 
+    }
+
+    .sub_titulo{
+        margin-left: 25%;
+        width: 50%;
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 600px){
     .wrapper .carousel{
         grid-auto-columns: 100%;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .titulo h1 {
+        font-size: 80px; 
+    }
+
+    nav ul {
+        font-size: 20px; 
     }
 }
