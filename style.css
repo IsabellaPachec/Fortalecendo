@@ -54,7 +54,7 @@ nav a {
     text-decoration: none;
 }
 
-li:hover {
+ul li a:hover, ul li a:active {
     height: 25px;
     background-color: rgba(193, 152, 245, 0.7);
     border-radius: 10px;
