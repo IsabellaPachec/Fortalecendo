@@ -1,32 +1,33 @@
-const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelectorAll(".wrapper span");
-const firstCardWidth = carousel.querySelector(".card") .offsetWidth;
+let currentSlide = 0;
 
-let isDragging = false, startX, startScrollLeft;
-
-arrowBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
-    })
-})
-
-const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
+// Função para mostrar o slide atual
+function showSlide(slideIndex) {
+    const slides = document.querySelectorAll(".conteiner");
+    if (slideIndex >= slides.length) {
+        currentSlide = 0;
+    } else if (slideIndex < 0) {
+        currentSlide = slides.length - 1;
+    }
+    slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+            slide.style.display = "block";
+        } else {
+            slide.style.display = "none";
+        }
+    });
 }
 
-const dragging = (e) => {
-    if(!isDragging) return;
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-}
+// Evento de clique no botão "Anterior"
+document.getElementById("prev").addEventListener("click", () => {
+    currentSlide--;
+    showSlide(currentSlide);
+});
 
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.add("dragging");
-}
+// Evento de clique no botão "Próximo"
+document.getElementById("next").addEventListener("click", () => {
+    currentSlide++;
+    showSlide(currentSlide);
+});
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
+// Inicialize o carrossel mostrando o primeiro slide
+showSlide(currentSlide);

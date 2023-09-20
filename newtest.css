@@ -204,26 +204,6 @@ h3{
     transition: 0.5s all;
 }
 
-.circulo1, .circulo2, .circulo3{
-    width: 261px;
-    height: 261px;
-    border-radius: 200px;
-    background-color: #063FD4;
-    margin: auto;
-    box-shadow: 0 12px 10px #DFC2F6;
-    background-image: url(Img/alemanha.jpg);
-    background-size: cover;
-}
-
-.circulo2{
-    background-image: url(Img/inglês.jpg);
-    background-size: cover;
-}
-
-.circulo3{
-    background-image: url(Img/romenia.jpg);
-    background-size: cover;
-}
 
  h4{
     font-weight: normal;
@@ -492,3 +472,12 @@ footer{
         font-size: 20px; 
     }
 }
+.buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    }
+  
+
+  
