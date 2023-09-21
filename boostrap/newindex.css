@@ -5,7 +5,40 @@
     font-style: normal;
 }
 
+/* GERAIS */
 
-h1{
-    color: red;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+
+.row{
+   margin:0; 
+}
+
+.container{
+    padding: 10px 0;
+}
+
+p, li{
+    color:#063FD4 ;
+    font-size: 14px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+.nav-container{
+   z-index: 1;
+}
+
+
+#navbar-links a{
+    color: #063FD4;
+    font-size: 25px;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem, 8rem;
+}
+
+
