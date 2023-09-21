@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'modernSans';
+    src: url(fontes/ModernSans-Light.otf) format(OpenType);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1{
+    color: red;
+}
