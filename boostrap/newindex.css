@@ -7,6 +7,7 @@
 
 /* GERAIS */
 
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -15,8 +16,14 @@ body{
    margin:0; 
 }
 
+.nav-container{
+    padding: 0;
+    z-index: 999;
+ }
+ 
+
 .container{
-    padding: 10px 0;
+    padding: 10px;
 }
 
 p, li{
@@ -26,11 +33,6 @@ p, li{
 
 /* BARRA DE NAVEGAÇÃO */
 
-.nav-container{
-   z-index: 1;
-}
-
-
 #navbar-links a{
     color: #063FD4;
     font-size: 25px;
@@ -38,7 +40,92 @@ p, li{
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
-    padding: 1rem, 8rem;
+    padding-bottom:  1rem 8rem;
+    z-index: 1;
+
 }
 
+/*MAIN */
 
+/* INICIO */
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.inicio{
+    background-color: #AF7CF2;
+    height: 90vh;
+    color: #fff;
+
+}
+
+.inicio h2{
+    font-size: 5rem;
+}
+
+.inicio span{
+    font-size: 2rem;
+}
+/* PRIMEIRA SESSÃO DE CONTEUDO */
+.fist-section-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100vh;
+    
+ }
+   
+ #p-0{
+    width: 55rem;
+    height: 25rem;
+  
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+ #p-1 {
+ 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+ #boneco-2 {
+    position: relative; 
+    width: 35rem;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+#boneco-2 img {
+    position: relative; 
+    z-index: 1;
+    margin-top: -300px; 
+}
+
+.p-first-section{
+    padding: 3rem;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.custom-hr {
+    border: none;
+    height: 2px;
+    border: solid #AF7CF2;
+    margin: 20px 0; 
+}
+
+ /* PRIMEIRA SESSÃO DE CONTEUDO */

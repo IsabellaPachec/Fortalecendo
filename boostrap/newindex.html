@@ -21,13 +21,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <title>Aulas de Inglês Online</title>
 </head>
 
 <body>
     <header>
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+        <div id="nav-container">
+            <nav class="navbar navbar-expand-lg">
                 <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="Navi-item nav-link" id="home-menu">Aulas</a>
@@ -41,46 +42,40 @@
     </header>
 
     <main>
-        <!--SLIDER-->
         <div class="container-fluid">
-            <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indcators">
-                    <li data-target="mainSlider" data-slider-top="0" class="active" ></li>
-                    <li data-target="mainSlider" data-slider-top="1" class="active" ></li>
-                    <li data-target="mainSlider" data-slider-top="2" class="active" ></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/retrato-de-mulher-no-trabalho-com-videochamada.jpg" class="d-block w-100"  alt="retrato-de-mulher-no-trabalho-com-videochamada">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Aulas 100% On-lines</h2>
-                            <p>Feitas para você!</p>
-                        </div>
+            <!--INICIAL-->
+            <div class="inicio d-flex align-items-center justify-content-center flex-column">
+                <h2>Aulas 100% on-line</h2>
+                <span>Feitas para você!</span>
+            </div>
+            <!--INICIAL-->
+            
+             <!--PRIMEIRA SESSÃO DE CONTEUDO-->
+            <div class="container" id="fist-section">
+                <div class="fist-section-grid">
+                    <div id="p-0">&nbsp;
+                        <p class="p-first-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                            similique in quo cumque voluptate. Tenetur recusandae, saepe possimus quod similique quaerat
+                            a, consequuntur aut repellendus magni, asperiores voluptatem dignissimos incidunt.</p>
+                    </div>
+                    <div id="p-1">&nbsp;
+                        <p class="p-first-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                            similique in quo cumque voluptate. Tenetur recusandae, saepe possimus quod similique quaerat
+                            a, consequuntur aut repellendus magni, asperiores voluptatem dignissimos incidunt.</p>
+                    </div>
+                    <div id="boneco-2">&nbsp;
+                        <img src="img/business-3d-young-woman-standing-and-smiling_1 2.png"
+                            alt="Boneco de uma mulher de cabelos curtos e loiros em pé">
                     </div>
                 </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="img/retrato-de-mulher-no-trabalho-com-videochamada.jpg" class="d-block w-100"  alt="retrato-de-mulher-no-trabalho-com-videochamada">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Aulas 100% On-lines</h2>
-                            <p>Feitas para você!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="img/retrato-de-mulher-no-trabalho-com-videochamada.jpg" class="d-block w-100"  alt="retrato-de-mulher-no-trabalho-com-videochamada">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Aulas 100% On-lines</h2>
-                            <p>Feitas para você!</p>
-                        </div>
-                    </div>
-                </div>
+                <hr class="bg-primary mt-3"> <!--SEPARANDO SESSÃO-->
             </div>
         </div>
-        <!--SLIDER-->
+
+
+
+
+
     </main>
     <script href="newindex.js"></script>
 </body>
