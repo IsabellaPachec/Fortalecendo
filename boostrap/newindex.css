@@ -129,3 +129,57 @@ p, li{
 }
 
  /* PRIMEIRA SESSÃO DE CONTEUDO */
+
+ /* SEGUNDA SESSÃO */
+
+ .angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    
+ }
+   
+ #item-0 {
+ 
+    background-color: #5DC5A5; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+ #item-1 {
+ 
+    background-color: #7989B9; 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #item-2 {
+ 
+    background-color: #BCC67D; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+ #item-3 {
+ 
+    background-color: #5BEA98; 
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+ }
