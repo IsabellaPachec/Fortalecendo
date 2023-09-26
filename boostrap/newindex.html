@@ -121,7 +121,7 @@
             <div id="segunda-sessão">
                 <div class="pratique-back">
                     <div class="container pratique">
-                        
+
                         <div class="d-flex justify-content-center">
                             <div class="row justify-content-center">
                                 <h2 class="titulo-sessão">PRATIQUE E DESENVOLVA</h2>
@@ -130,7 +130,8 @@
                                         <img src="img/alemanhafoto.jpg" alt="imagem de um ponto turístico da Alemanha">
                                         <div class="card-body">
                                             <h2 class="card-title">Alemão</h2>
-                                            <p class="text-card">Pratique seu alemão comigo em aulas on-line</p>
+                                            <p class="text-card">Pratique seu alemão comigo em aulas on-line e dinâmicas
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -138,8 +139,8 @@
                                     <div class="card">
                                         <img src="img/romeniafoto.jpg" alt="imagem de um ponto turístico da Alemanha">
                                         <div class="card-body">
-                                            <h2 class="card-title">Alemão</h2>
-                                            <p class="text-card">Pratique seu alemão comigo em aulas on-line</p>
+                                            <h2 class="card-title">Romenia</h2>
+                                            <p class="text-card">Pratique seu romenos com aulas on-line dinâmicas</p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,8 +149,9 @@
                                         <img src="img/estatuadaliberdade.jpg"
                                             alt="imagem de um ponto turístico da Alemanha">
                                         <div class="card-body">
-                                            <h2 class="card-title">Alemão</h>
-                                                <p class="text-card">Pratique seu alemão comigo em aulas on-line</p>
+                                            <h2 class="card-title">Inglês</h>
+                                                <p class="text-card">Eleve seu nivel de inglês e pratique comigo em
+                                                    aulas cheias de conteudos 100% on-lines e dinâmicas</p>
                                         </div>
                                     </div>
                                 </div>
@@ -187,7 +189,7 @@
                                     <hr>
                                     <span class="preço">R$ 45,00</span>
                                     <br>
-                                    <button class=" contato btn btn-info">Entre em contato</button>
+                                    <button id="botao1" class=" contato btn btn-info">Entre em contato</button>
 
                                 </div>
                             </div>
@@ -208,7 +210,7 @@
                                     <hr>
                                     <span class="preço">R$ 45,00</span>
                                     <br>
-                                    <button class=" contato btn btn-info">Entre em contato</button>
+                                    <button id="botao2" class=" contato btn btn-info">Entre em contato</button>
 
                                 </div>
                             </div>
@@ -229,20 +231,35 @@
                                     <hr>
                                     <span class="preço">R$ 45,00</span>
                                     <br>
-                                    <button class=" contato btn btn-info">Entre em contato</button>
+                                    <button id="botao3" class=" contato btn btn-info">Entre em contato</button>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    // JavaScript dos botões
+                    var botao1 = document.getElementById("botao1");
+                    botao1.addEventListener("click", function() {
+                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    });
+                  
+                    var botao2 = document.getElementById("botao2");
+                    botao2.addEventListener("click", function() {
+                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    });
+                  
+                    
+                    var botao3 = document.getElementById("botao3");
+                    botao3.addEventListener("click", function() {
+                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    });
+                  </script>
+                  
             </div>
             <!--PLANOS-->
-            <div id="quarta-sessão">
-                <div class="container">
-                    
-                </div>
-            </div>
+            
             <!--PLANOS-->
         </div>
     </main>
