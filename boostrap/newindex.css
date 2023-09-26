@@ -8,178 +8,274 @@
 /* GERAIS */
 
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-.row{
-   margin:0; 
+header {
+    background: linear-gradient(90deg, rgba(149, 168, 216, 0.6), rgba(175, 124, 242, 0.6), rgba(193, 152, 245, 0.6) 30.95%, rgba(223, 194, 246, 0.6), rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 1));
+    height: 95vh;
 }
 
-.nav-container{
+.row {
+    margin: 0;
+}
+
+.nav-container {
     padding: 0;
     z-index: 999;
- }
- 
+}
 
-.container{
+
+.container {
     padding: 10px;
 }
 
-p, li{
-    color:#063FD4 ;
-    font-size: 14px;
+p,
+li {
+    color: #063FD4;
+    font-size: 2rem;
 }
 
 /* BARRA DE NAVEGAÇÃO */
 
-#navbar-links a{
+#navbar-links a {
     color: #063FD4;
-    font-size: 25px;
+    font-size: 2.1rem;
 
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding-bottom:  1rem 8rem;
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-bottom: 1rem 8rem;
     z-index: 1;
 
 }
 
-/*MAIN */
 
-/* INICIO */
-
-.container-fluid{
+/*INICIO-HEADER*/
+.container-fluid {
     padding: 0;
     margin: 0;
 }
 
-.inicio{
-    background-color: #AF7CF2;
+.inicio {
     height: 90vh;
-    color: #fff;
+    color: #063FD4;
 
 }
 
-.inicio h2{
+.titulo-header {
     font-size: 5rem;
+    position: relative;
+    top: -70px;
 }
 
-.inicio span{
-    font-size: 2rem;
-}
-/* PRIMEIRA SESSÃO DE CONTEUDO */
-.fist-section-grid {
-    display: grid; 
- 
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-    gap: 0px;
-    height: 100vh;
-    
- }
-   
- #p-0{
-    width: 55rem;
-    height: 25rem;
-  
-    grid-row-start: 1;
-    grid-column-start: 1;
- 
-    grid-row-end: 2;
-    grid-column-end: 3;
-    
- }
- #p-1 {
- 
-    grid-row-start: 2;
-    grid-column-start: 1;
- 
-    grid-row-end: 3;
-    grid-column-end: 3;
-    
- }
- #boneco-2 {
-    position: relative; 
-    width: 35rem;
-    grid-row-start: 1;
-    grid-column-start: 3;
-    grid-row-end: 3;
-    grid-column-end: 4;
+.subtitulo-header {
+    font-size: 3rem;
+    position: relative;
+    top: -70px;
 }
 
-#boneco-2 img {
-    position: relative; 
-    z-index: 1;
-    margin-top: -300px; 
-}
-
-.p-first-section{
-    padding: 3rem;
-    text-align: justify;
-    font-size: 2rem;
-}
 
 .custom-hr {
     border: none;
     height: 2px;
     border: solid #AF7CF2;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
- /* PRIMEIRA SESSÃO DE CONTEUDO */
 
- /* SEGUNDA SESSÃO */
+/*MAIN */
 
- .angry-grid {
-    display: grid; 
- 
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+/*PRIMEIRA SESSÃO*/
+
+.primeira-sessão {
+    height: 150vh;
+}
+
+.item3 {
+    position: relative;
+}
+
+.item3 img {
+    position: absolute;
+    top: -300px;
+}
+
+.item1,
+.item2 {
+    width: 110vh;
+    height: 55vh;
+}
+
+.p-primeira-sessão {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 70px 30px;
+}
+
+/*PRIMEIRA SESSÃO*/
+
+/*SEGUNDA SESSÃO*/
+
+.item-semi-circulo {
+    height: 65vh;
+    width: 95vh;
+    position: absolute;
+    border-radius: 10px 10px 350px 350px;
+    background: linear-gradient(180deg, rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 0.5), transparent);
+
+}
+
+.item-semi-circulo img {
+    position: absolute;
+    top: -290px;
+    z-index: 1;
     
-    gap: 0px;
-    height: 100%;
-    
- }
-   
- #item-0 {
- 
-    background-color: #5DC5A5; 
-    grid-row-start: 1;
-    grid-column-start: 1;
- 
-    grid-row-end: 2;
-    grid-column-end: 3;
-    
- }
- #item-1 {
- 
-    background-color: #7989B9; 
-    grid-row-start: 1;
-    grid-column-start: 3;
- 
-    grid-row-end: 2;
-    grid-column-end: 5;
-    
- }
- #item-2 {
- 
-    background-color: #BCC67D; 
-    grid-row-start: 2;
-    grid-column-start: 1;
- 
-    grid-row-end: 3;
-    grid-column-end: 3;
-    
- }
- #item-3 {
- 
-    background-color: #5BEA98; 
-    grid-row-start: 2;
-    grid-column-start: 3;
- 
-    grid-row-end: 3;
-    grid-column-end: 4;
-    
- }
+}
+
+.item-metodologia-p-1 {
+    margin-left: 60px;
+}
+
+.titulo-primeira-sessão {
+    color: #063FD4;
+    text-align: center;
+    padding: 20px;
+}
+
+.p-segunda-sessão {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 15px 30px;
+}
+.p-segunda-sessão-pdl{ 
+    font-size: 2rem;
+    text-align: justify;
+    padding: 130px 30px; 
+}
+
+.item-metodologia-p-2 {
+    width: 100vh;
+}
+
+.item-books {
+    margin-left: 40%;
+}
+
+/*PRATIQUE E DESENVOLVA*/
+
+.pratique{
+    height:130vh;
+}
+
+.pratique-back{
+    background: linear-gradient(90deg, rgba(149, 168, 216, 0.6), rgba(175, 124, 242, 0.6), rgba(193, 152, 245, 0.6) 30.95%, rgba(223, 194, 246, 0.6), rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 1));
+}
+.titulo-sessão {
+    color: #063FD4;
+    text-align: center;
+    padding: 70px;
+}
+
+.card img {
+    max-width: 55vh;
+    max-height: 90vh;
+}
+
+.card,
+.card-title {
+    color: #fff;
+    font: 5rem;
+}
+
+.text-card {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.text-card {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-body {
+    height: 150px;
+    background-color: rgb(27, 27, 27, 0.5);
+    position: absolute;
+    bottom: -3px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.8s all;
+}
+
+.card:hover .card-body {
+    height: 159px;
+    bottom: 20;
+    background-color: black;
+}
+
+.card:hover .text-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*PLANOS*/
+
+.item-above img{
+    z-index: 99;
+}
+.item1-plano, .item2-plano, .item3-plano{
+    width: 50vh;
+    height: 105vh;
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(180deg, #CFE8F5, #DBCDF7, rgba(219, 191, 255, 0.5), #FCF2FA, transparent);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.plano-titulo{
+    color: #063FD4;
+    padding: 20px;
+}
+
+.plano-texto{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.preço{
+    font-size: 2rem;
+    color: #063FD4;
+}
+
+.tamanho{
+    width: 90%;
+}
+
+.item1-plano:hover{
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+.item2-plano:hover{
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+.item3-plano:hover{
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+/*PLANOS*/
+
+/*MEUS ALUNOS*/
+
+
+
+/*MEUS ALUNOS*/
