@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="newindex.css">
+
+    <!--SWPER CSS-->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.3.0_swiper-bundle.css">
+
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -17,6 +21,8 @@
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <!--Fontes-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="fontes/ModernSans-Light.otf">
@@ -241,29 +247,94 @@
                 <script>
                     // JavaScript dos botões
                     var botao1 = document.getElementById("botao1");
-                    botao1.addEventListener("click", function() {
-                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    botao1.addEventListener("click", function () {
+                        window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
                     });
-                  
+
                     var botao2 = document.getElementById("botao2");
-                    botao2.addEventListener("click", function() {
-                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    botao2.addEventListener("click", function () {
+                        window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
                     });
-                  
-                    
+
+
                     var botao3 = document.getElementById("botao3");
-                    botao3.addEventListener("click", function() {
-                      window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
+                    botao3.addEventListener("click", function () {
+                        window.location.href = "https://api.whatsapp.com/send?phone=5511984607661";
                     });
-                  </script>
-                  
+                </script>
+
             </div>
             <!--PLANOS-->
-            
+            <div id="quarta-sessão">
+                <div class="container">
+                    <h2 class="quarta-sessão-titulo"> MEUS ALUNOS</h2>
+                    <div class="testimonial mySwiper">
+                        <div class=" testi-contente swiper-wrapper">
+                            <div class=" slider swiper-slide">
+                                <img src="img/alemanha.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga obcaecati deserunt
+                                    quia non vitae omnis cumque animi illum consectetur exercitationem. Natus doloremque
+                                    porro vero asperiores quam odit rerum ratione minus.</p>
+                                <span class="nome">Marilia</span>
+                                <span class="job">Marilia</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/alemanha.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga obcaecati deserunt
+                                    quia non vitae omnis cumque animi illum consectetur exercitationem. Natus doloremque
+                                    porro vero asperiores quam odit rerum ratione minus.</p>
+                                <span class="nome">Marilia</span>
+                                <span class="job">Marilia</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/alemanha.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga obcaecati deserunt
+                                    quia non vitae omnis cumque animi illum consectetur exercitationem. Natus doloremque
+                                    porro vero asperiores quam odit rerum ratione minus.</p>
+                                <span class="nome">Marilia</span>
+                                <span class="job">Marilia</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/alemanha.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga obcaecati deserunt
+                                    quia non vitae omnis cumque animi illum consectetur exercitationem. Natus doloremque
+                                    porro vero asperiores quam odit rerum ratione minus.</p>
+                                <span class="nome">Marilia</span>
+                                <span class="job">Marilia</span>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
             <!--PLANOS-->
         </div>
+
+
     </main>
-    <script src="newindex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.3.0_swiper-bundle.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>

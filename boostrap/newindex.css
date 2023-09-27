@@ -131,7 +131,7 @@ li {
     position: absolute;
     top: -290px;
     z-index: 1;
-    
+
 }
 
 .item-metodologia-p-1 {
@@ -149,10 +149,11 @@ li {
     text-align: justify;
     padding: 15px 30px;
 }
-.p-segunda-sessão-pdl{ 
+
+.p-segunda-sessão-pdl {
     font-size: 2rem;
     text-align: justify;
-    padding: 130px 30px; 
+    padding: 130px 30px;
 }
 
 .item-metodologia-p-2 {
@@ -165,13 +166,14 @@ li {
 
 /*PRATIQUE E DESENVOLVA*/
 
-.pratique{
-    height:130vh;
+.pratique {
+    height: 130vh;
 }
 
-.pratique-back{
+.pratique-back {
     background: linear-gradient(90deg, rgba(149, 168, 216, 0.6), rgba(175, 124, 242, 0.6), rgba(193, 152, 245, 0.6) 30.95%, rgba(223, 194, 246, 0.6), rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 1));
 }
+
 .titulo-sessão {
     color: #063FD4;
     text-align: center;
@@ -213,7 +215,7 @@ li {
 }
 
 .card:hover .card-body {
-    height: 159px;
+    height: 180px;
     bottom: 20;
     background-color: black;
 }
@@ -225,10 +227,13 @@ li {
 
 /*PLANOS*/
 
-.item-above img{
+.item-above img {
     z-index: 99;
 }
-.item1-plano, .item2-plano, .item3-plano{
+
+.item1-plano,
+.item2-plano,
+.item3-plano {
     width: 50vh;
     height: 105vh;
     text-align: center;
@@ -238,36 +243,36 @@ li {
     border-radius: 20px;
 }
 
-.plano-titulo{
+.plano-titulo {
     color: #063FD4;
     padding: 20px;
 }
 
-.plano-texto{
+.plano-texto {
     font-size: 1.5rem;
     padding: 10px;
 }
 
-.preço{
+.preço {
     font-size: 2rem;
     color: #063FD4;
 }
 
-.tamanho{
+.tamanho {
     width: 90%;
 }
 
-.item1-plano:hover{
+.item1-plano:hover {
     transform: scale(1.1);
     transition: 0.5s all;
 }
 
-.item2-plano:hover{
+.item2-plano:hover {
     transform: scale(1.1);
     transition: 0.5s all;
 }
 
-.item3-plano:hover{
+.item3-plano:hover {
     transform: scale(1.1);
     transition: 0.5s all;
 }
@@ -275,10 +280,71 @@ li {
 /*PLANOS*/
 
 /*MEUS ALUNOS*/
-#quarta-sessão{
-    height: 50vh;
+#quarta-sessão {
     background: linear-gradient(90deg, rgba(149, 168, 216, 0.6), rgba(175, 124, 242, 0.6), rgba(193, 152, 245, 0.6) 30.95%, rgba(223, 194, 246, 0.6), rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 1));
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
+.quarta-sessão-titulo{
+    text-align: center;
+    color: #063FD4;
+    padding: 50px;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 250vh;
+    padding: 50px 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: 9.5%;
+}
+
+.testimonial img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.slider p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome{
+    font-size: 1rem ;
+    font-weight: 600;
+    color: #041c57;
+}
+.job{
+    font-size: 1rem ;
+    font-weight: 400;
+    color: #041c57;
+}
 
 /*MEUS ALUNOS*/
