@@ -82,20 +82,12 @@ li {
 }
 
 
-.custom-hr {
-    border: none;
-    height: 2px;
-    border: solid #AF7CF2;
-    margin: 20px 0;
-}
-
-
 /*MAIN */
 
 /*PRIMEIRA SESSÃO*/
 
 .primeira-sessão {
-    height: 150vh;
+    height: 120vh;
 }
 
 .item3 {
@@ -110,31 +102,35 @@ li {
 .item1,
 .item2 {
     width: 110vh;
-    height: 55vh;
+    height: 40vh;
 }
 
 .p-primeira-sessão {
     font-size: 2rem;
     text-align: justify;
-    padding: 70px 30px;
+    padding: 40px 30px;
 }
 
 /*PRIMEIRA SESSÃO*/
 
 /*SEGUNDA SESSÃO*/
 
+.segunda-sessão{
+    height: 130vh;
+
+}
+
 .item-semi-circulo {
-    height: 65vh;
-    width: 95vh;
+    height: 80vh;
+    width: 85vh;
     position: absolute;
-    border-radius: 10px 10px 350px 350px;
-    background: linear-gradient(180deg, rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 0.5), transparent);
 
 }
 
 .item-semi-circulo img {
+    display: flex;
     position: absolute;
-    top: -290px;
+    top: -400px;
     z-index: 1;
 
 }
@@ -166,7 +162,7 @@ li {
 }
 
 .item-books {
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 /*PRATIQUE E DESENVOLVA*/
@@ -254,6 +250,7 @@ li {
 }
 
 .plano-texto {
+    margin-top: 50px;
     font-size: 1.5rem;
     padding: 10px;
 }
@@ -287,7 +284,7 @@ li {
 }
 
 #botao2{
-    margin-top: 35px;
+    margin-top: 60px;
 }
 
 #botao3{
@@ -299,71 +296,110 @@ li {
 /*PLANOS*/
 
 /*MEUS ALUNOS*/
-#quarta-sessão {
+#quarta-sessão{
     background: linear-gradient(90deg, rgba(149, 168, 216, 0.6), rgba(175, 124, 242, 0.6), rgba(193, 152, 245, 0.6) 30.95%, rgba(223, 194, 246, 0.6), rgba(220, 193, 248, 0.6), rgba(244, 199, 227, 1));
-    align-items: center;
+}
+.quarta-sessão {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-}
 
-.quarta-sessão-titulo{
-    text-align: center;
-    color: #063FD4;
-    padding: 50px;
 }
 
 .testimonial {
     position: relative;
     max-width: 900px;
-    width: 250vh;
+    width: 100%;
     padding: 50px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    margin-left: 9.5%;
-}
-
-.testimonial img {
-    height: 130px;
-    width: 130px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px  rgba(80, 68, 112, 0.6);
+    background-color: rgb(255, 255, 255);
+  }
+  .testimonial .image {
+    height: 170px;
+    width: 170px;
     object-fit: cover;
     border-radius: 50%;
-}
-
-.testimonial .slider {
+  }
+  .testimonial .slide {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: 10px;
-}
-
-.slider p {
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .slide p {
     text-align: center;
     padding: 0 160px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
-}
-
-.slider{
+    color: #333;
+  }
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+  }
+  .slide .details {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.nome{
-    font-size: 1rem ;
+  }
+  .details .name {
+    font-size: 14px;
     font-weight: 600;
-    color: #041c57;
-}
-.job{
-    font-size: 1rem ;
+    color: #333;
+  }
+  .details .job {
+    font-size: 12px;
     font-weight: 400;
-    color: #041c57;
-}
+    color: #333;
+  }
+  /* swiper button css */
+  .nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav-btn::after,
+  .nav-btn::before {
+    font-size: 20px;
+    color: #063FD4;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  }
 
-/*MEUS ALUNOS*/
+  /*MEUS ALUNOS*/
+
+  @media screen and (max-width: 768px) {
+
+    .slide p {
+      padding: 0 20px;
+    }
+    .nav-btn {
+      display: none;
+    }
+  }
+
+
+
+
+
+   
+
+  

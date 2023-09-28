@@ -1,0 +1,57 @@
+           <!--ALUNOS-->
+            <div id="quarta-sessão">
+                <div class="container">
+                    <h2 class="quarta-sessão-titulo"> MEUS ALUNOS</h2>
+                    <div class="testimonial mySwiper">
+                        <div class=" testi-contente swiper-wrapper">
+                            <div class=" slider swiper-slide">
+                                <img src="img/isa2.jpg" alt="">
+                                <p>Tina é a melhor professora de inglês que eu já tive. Com ela, perdi meu medo do inglês e evoluí rápido e com muita fluidez. As aulas dela são realmente incríveis! </p>
+                                <span class="nome">Isabella Pacheco</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/s.jpg" alt="">
+                                <p>Tina é a melhor professora de inglês que eu já tive. Com ela, perdi meu medo do inglês e evoluí rápido e com muita fluidez. As aulas dela são realmente incríveis.</p>
+                                <span class="nome">Stella Beatriz</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/v.jpg" alt="">
+                                <p>
+                                    O início das minhas aulas de inglês com a Tina foi realmente uma experiência incrível. Desde o primeiro encontro, fiquei impressionado com a abordagem dela ao ensino e sua dedicação ao meu progresso.</p>
+                                <span class="nome">Vinicius Silva</span>
+                            </div>
+                            <div class=" slider swiper-slide">
+                                <img src="img/r.png" alt="">
+                                <p>Uma das características mais marcantes das aulas com a Tina é a fluidez com que ela conduz o processo de aprendizado. Ela tem a habilidade de tornar as aulas envolventes e dinâmicas, de modo que o tempo passa voando. Sua capacidade de manter a atenção do aluno e criar uma atmosfera de aprendizado agradável é realmente impressionante.</p>
+                                <span class="nome">Rubens Pacheco</span>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!--ALUNOS-->
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
